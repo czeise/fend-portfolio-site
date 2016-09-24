@@ -1,18 +1,36 @@
 var gulp = require('gulp'),
   uglify = require('gulp-uglify'),
   rename = require('gulp-rename')
-  cleanCSS = require('gulp-clean-css'),
-  concat = require('gulp-concat');
+  cleancss = require('gulp-clean-css'),
+  concat = require('gulp-concat'),
+  minifyhtml = require('gulp-minify-html');
 
 var paths = {
-  css: ['src/css/main.css'],
-  images: ['src/images/*']
+  css_src: ['src/css/main.css'],
+  css_dist: 'dist/css',
+  images_src: ['src/images/*'],
+  images_dist: 'dist/images',
+  content: ['src/index.html'],
+  dist: 'dist'
 };
 
-gulp.task('css', function(){
-  gulp.src(paths.css)
-    .pipe(cleanCSS())
-    .pipe(gulp.dest('dist/css'));
+gulp.task('clean-css', function(){
+  gulp.src(paths.css_src)
+    .pipe(cleancss())
+    .pipe(gulp.dest(paths.css_dist));
 });
 
-gulp.task('default', ['css']);
+gulp.task('minify-html', function(){
+  gulp.src(paths.content)
+    .pipe(minifyhtml({
+      empty: true,
+      quotes: true
+    }))
+    .pipe(gulp.dest(paths.dist))
+});
+
+gulp.task('watch', function(){
+  gulp.watch(paths.css, ['clean-css', 'minify-html']);
+});
+
+gulp.task('default', ['clean-css', 'minify-html', 'watch']);
