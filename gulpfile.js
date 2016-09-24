@@ -6,7 +6,7 @@ var gulp = require('gulp'),
   minifyhtml = require('gulp-minify-html');
 
 var paths = {
-  css_src: ['src/css/main.css'],
+  css_src: ['src/css/styles.css'],
   css_dist: 'dist/css',
   images_src: ['src/images/*'],
   images_dist: 'dist/images',
