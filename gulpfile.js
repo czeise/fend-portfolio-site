@@ -30,7 +30,8 @@ gulp.task('minify-html', function(){
 });
 
 gulp.task('watch', function(){
-  gulp.watch(paths.css, ['clean-css', 'minify-html']);
+  gulp.watch(paths.css, ['clean-css']);
+  gulp.watch(paths.content, ['minify-html']);
 });
 
 gulp.task('default', ['clean-css', 'minify-html', 'watch']);
