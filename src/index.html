@@ -16,13 +16,14 @@
   <body>
     <div class="container">
       <div class="row">
-        <div class="col-md-6">
-          <img class="img-responsive title-logo" src="http://placehold.it/134" alt="Logo">
+        <div class="col-sm-3">
+          <img class="logo" alt="Udacity" src="https://d125fmws0bore1.cloudfront.net/assets/svgs/logo-mark-e5f34635b01d52302632b23512f3553efba00cd453c3f891c8bf6ee0ca5bcb6c.svg">
         </div>
 
-        <div class="col-md-6 text-right text-uppercase">
-          <h1 class="text-thin title-super">First M. Last</h1>
-          <h4>Title</h4>
+        <div class="col-sm-9 text-right text-uppercase">
+          <h1 class="text-thin title-super">Craig M. Zeise</h1>
+          <h4>Front-End Web Developer Nanodegree Student</h4>
+          <h4>Ruby Programming Nanodegree Graduate</h4>
         </div>
       </div>
 
@@ -45,19 +46,19 @@
       </div>
 
       <div class="row text-center">
-        <div class="col-md-4">
-          <img class="img-responsive" src="http://placehold.it/400x226" alt="Project 1 image" data-toggle="modal" data-target="#project1">
-          <h3 class="text-uppercase">project 1</h3>
-          <p>http://1.project.com</p>
+        <div class="col-sm-4 clickable" data-toggle="modal" data-target="#survivr">
+          <img class="img-responsive" src="http://placehold.it/400x226" alt="Project 1 image">
+          <h3 class="text-uppercase">Survivr</h3>
+          <!-- I'm dropping the links here and instead linking to my GitHub repos from the modals. -->
         </div>
 
-        <div class="col-md-4">
+        <div class="col-sm-4">
           <img class="img-responsive" src="http://placehold.it/400x226" alt="Project 2 image" data-toggle="modal" data-target="#project2">
           <h3 class="text-uppercase">project 2</h3>
           <p>http://2.project.com</p>
         </div>
 
-        <div class="col-md-4">
+        <div class="col-sm-4">
           <img class="img-responsive" src="http://placehold.it/400x226" alt="Project 3 image" data-toggle="modal" data-target="#project3">
           <h3 class="text-uppercase">project 3</h3>
           <p>http://3.project.com</p>
@@ -66,19 +67,28 @@
     </div>
 
     <!-- Modals -->
-    <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
+    <div class="modal fade" id="survivr" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title" id="myModalLabel1">Project 1 Page</h4>
+                    <h4 class="modal-title" id="myModalLabel1">Survivr</h4>
                 </div>
                 <div class="modal-body">
-                    <img class="img-responsive" src="http://placehold.it/555" alt="Project 1">
-                    Project 1 text.
+                  <figure>
+                    <a href="https://github.com/czeise/rbnd-survivr-part2" target="_blank">
+                      <img class="img-responsive" src="http://placehold.it/600" alt="Project 1">
+                      <figcaption class="text-center">
+                          Check out Survivr on GitHub
+                      </figcaption>
+                    </a>
+                  </figure>
+                  <p>
+                    Info about Survivr...
+                  </p>
                 </div>
-                <div class="modal-footer">
+                <!-- <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
