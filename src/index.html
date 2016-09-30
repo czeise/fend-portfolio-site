@@ -47,15 +47,14 @@
 
       <div class="row text-center">
         <div class="col-sm-4 clickable" data-toggle="modal" data-target="#survivr">
-          <img class="img-responsive" src="http://placehold.it/360x226" alt="Project 1 image">
+          <img class="img-responsive" src="images/survivr-original.png" alt="Survivr">
           <h3 class="text-uppercase">Survivr</h3>
-          <!-- I'm dropping the links here and instead linking to my GitHub repos from the modals. -->
+          <!-- I'm dropping the links in this section and instead linking to my GitHub repos from the modals. -->
         </div>
 
-        <div class="col-sm-4">
-          <img class="img-responsive" src="http://placehold.it/360x226" alt="Project 2 image" data-toggle="modal" data-target="#project2">
-          <h3 class="text-uppercase">project 2</h3>
-          <p>http://2.project.com</p>
+        <div class="col-sm-4 clickable" data-toggle="modal" data-target="#udacitask-part2">
+          <img class="img-responsive" src="images/udacitask-part2-original.png" alt="Udacitask 2.0">
+          <h3 class="text-uppercase">Udacitask 2.0</h3>
         </div>
 
         <div class="col-sm-4">
@@ -67,25 +66,26 @@
     </div>
 
     <!-- Modals -->
-    <div class="modal fade" id="survivr" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
+    <div class="modal fade" id="survivr" tabindex="-1" role="dialog" aria-labelledby="survivrLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title" id="myModalLabel1">Survivr</h4>
+                    <h4 class="modal-title" id="survivrLabel">Survivr</h4>
                 </div>
                 <div class="modal-body">
                   <figure>
-                    <a href="https://github.com/czeise/rbnd-survivr-part2" target="_blank">
-                      <img class="img-responsive" src="http://placehold.it/600" alt="Project 1">
+                      <img class="img-responsive" src="images/survivr-original.png" alt="Survivr">
                       <figcaption class="text-center">
+                        <a href="https://github.com/czeise/rbnd-survivr-part2" target="_blank">
                           Check out Survivr on GitHub
+                        </a>
                       </figcaption>
-                    </a>
                   </figure>
                   <p>
                     Info about Survivr...
                   </p>
                 </div>
+                <!-- I like these better with the close button at the bottom, the user can simply click outside of the modal to close it. I think that's pretty well understood (or easily discoverable) these days. -->
                 <!-- <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                 </div> -->
@@ -93,18 +93,24 @@
         </div>
     </div>
 
-    <div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
+    <div class="modal fade" id="udacitask-part2" tabindex="-1" role="dialog" aria-labelledby="udacitaskLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title" id="myModalLabel2">Project 2 Page</h4>
+                    <h4 class="modal-title" id="udacitaskLabel">Udacitask 2.0</h4>
                 </div>
                 <div class="modal-body">
-                    <img class="img-responsive" src="http://placehold.it/555" alt="Project 2">
-                    Project 2 text.
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  <figure>
+                    <img class="img-responsive" src="images/udacitask-part2-original.png" alt="Udacitask 2.0">
+                    <figcaption class="text-center">
+                      <a href="https://github.com/czeise/rbnd-udacitask-part2" target="_blank">
+                        Check out Udacitask 2.0 on GitHub
+                      </a>
+                    </figcaption>
+                  </figure>
+                  <p>
+                    Info about Udacitask 2.0...
+                  </p>
                 </div>
             </div>
         </div>

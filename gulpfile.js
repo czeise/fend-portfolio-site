@@ -29,9 +29,15 @@ gulp.task('minify-html', function(){
     .pipe(gulp.dest(paths.dist))
 });
 
+gulp.task('prep-images', function(){
+  gulp.src(paths.images_src)
+    .pipe(gulp.dest(paths.images_dist));
+});
+
 gulp.task('watch', function(){
   gulp.watch(paths.css_src, ['clean-css']);
   gulp.watch(paths.content, ['minify-html']);
+  gulp.watch(paths.images_src, ['prep-images']);
 });
 
-gulp.task('default', ['clean-css', 'minify-html', 'watch']);
+gulp.task('default', ['clean-css', 'minify-html', 'prep-images', 'watch']);
