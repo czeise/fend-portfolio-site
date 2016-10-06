@@ -1,9 +1,5 @@
 var gulp = require('gulp'),
-  uglify = require('gulp-uglify'),
-  rename = require('gulp-rename')
-  cleancss = require('gulp-clean-css'),
-  concat = require('gulp-concat'),
-  minifyhtml = require('gulp-minify-html');
+  plugins = require('gulp-load-plugins')();
 
 var paths = {
   css_src: ['src/css/styles.css'],
@@ -16,13 +12,13 @@ var paths = {
 
 gulp.task('clean-css', function(){
   gulp.src(paths.css_src)
-    .pipe(cleancss())
+    .pipe(plugins.cleanCss())
     .pipe(gulp.dest(paths.css_dist));
 });
 
 gulp.task('minify-html', function(){
   gulp.src(paths.content)
-    .pipe(minifyhtml({
+    .pipe(plugins.minifyHtml({
       empty: true,
       quotes: true
     }))
