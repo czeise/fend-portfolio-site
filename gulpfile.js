@@ -4,7 +4,7 @@ var gulp = require('gulp'),
 var paths = {
   css_src: ['src/css/styles.css'],
   css_dist: 'dist/css',
-  images_src: ['src/images/*'],
+  images_src: ['src/images/*.{png,jpg}'],
   images_dist: 'dist/images',
   content: ['src/index.html'],
   dist: 'dist'
@@ -27,6 +27,12 @@ gulp.task('minify-html', function(){
 
 gulp.task('prep-images', function(){
   gulp.src(paths.images_src)
+    .pipe(plugins.responsive({
+      '*.png': {
+        width: 330,
+        rename: { suffix: '-xs' }
+      }
+    }))
     .pipe(gulp.dest(paths.images_dist));
 });
 
