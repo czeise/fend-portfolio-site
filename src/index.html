@@ -35,7 +35,15 @@
 
       <div class="row">
         <div class="col-xs-12">
-          <img class="img-responsive" src="images/working.png" alt="Terminal and code editor windows">
+          <picture>
+            <source media="(min-width: 992px) and (max-width: 1199px)"
+              srcset="images/working-md.jpg">
+            <source media="(min-width: 361px) and (max-width: 991px)"
+              srcset="images/working-sm.jpg">
+            <!-- I don't drop down to my xs image until 360px since I'm targeting a Nexus 5 with this image...4 image sizes seemed like enough! -->
+            <source media="(max-width: 360px)" srcset="images/working-xs.jpg">
+            <img class="img-responsive" src="images/working.jpg" alt="Terminal and code editor windows">
+          </picture>
         </div>
       </div>
 
@@ -47,18 +55,31 @@
 
       <div class="row text-center">
         <div class="col-sm-4 clickable" data-toggle="modal" data-target="#survivr">
-          <img class="img-responsive" src="images/survivr-original.png" alt="Survivr">
+          <picture>
+            <source media="(max-width: 360px)" srcset="images/survivr-xs.jpg">
+            <img class="img-responsive" src="images/survivr.jpg" alt="Survivr">
+          </picture>
           <h3 class="text-uppercase">Survivr</h3>
           <!-- I'm dropping the links in this section and instead linking to my GitHub repos from the modals. -->
         </div>
 
         <div class="col-sm-4 clickable" data-toggle="modal" data-target="#udacitask-part2">
-          <img class="img-responsive" src="images/udacitask-part2-original.png" alt="Udacitask 2.0">
+          <picture>
+            <source media="(max-width: 360px)" srcset="images/udacitask-part2-xs.jpg">
+            <img class="img-responsive" src="images/udacitask-part2.jpg" alt="Udacitask 2.0">
+          </picture>
           <h3 class="text-uppercase">Udacitask 2.0</h3>
         </div>
 
         <div class="col-sm-4 clickable" data-toggle="modal" data-target="#animal-trading-cards">
-          <img class="img-responsive" src="images/animal-trading-cards-original.png" alt="Animal Trading Cards">
+          <picture>
+            <source media="(max-width: 767px)"
+              srcset="images/animal-trading-cards.jpg">
+            <source media="(max-width: 360px)"
+              srcset="images/animal-trading-cards-nexus5.jpg">
+            <img class="img-responsive" src="images/animal-trading-cards-short.jpg"
+              alt="Animal Trading Cards">
+          </picture>
           <h3 class="text-uppercase">Animal Trading Cards</h3>
         </div>
       </div>

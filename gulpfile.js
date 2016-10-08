@@ -57,33 +57,17 @@ gulp.task('prep-images', function(){
         }
       ],
       'survivr.png': {
-        width: 568,
         rename: { extname: '.jpg' }
       },
       'udacitask-part2.png': {
-        width: 568,
         rename: { extname: '.jpg' }
       },
       'animal-trading-cards.png': [
         {
-          width: 220,
-          height: 174,
-          rename: {
-            suffix: '-sm',
-            extname: '.jpg'
-          }
-        }, {
-          width: 293,
-          height: 233,
-          rename: {
-            suffix: '-md',
-            extname: '.jpg'
-          }
-        }, {
           width: 360,
           height: 285.47,
           rename: {
-            suffix: '-lg',
+            suffix: '-short',
             extname: '.jpg'
           }
         }, { // For the modal version of the taller image (except "-xs")
