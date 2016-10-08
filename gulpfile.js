@@ -29,9 +29,40 @@ gulp.task('prep-images', function(){
   gulp.src(paths.images_src)
     .pipe(plugins.responsive({
       '*.png': {
+        format: 'jpeg',
         width: 330,
-        rename: { suffix: '-xs' }
-      }
+        rename: {
+          suffix: '-xs',
+          extname: '.jpg'
+        }
+      },
+      'working.png': [
+        {
+          format: 'jpeg',
+          width: 720,
+          height: 288,
+          rename: {
+            suffix: '-sm',
+            extname: '.jpg'
+          }
+        }, {
+          format: 'jpeg',
+          width: 940,
+          height: 376,
+          rename: {
+            suffix: '-md',
+            extname: '.jpg'
+          }
+        }, {
+          format: 'jpeg',
+          width: 1140,
+          height: 456,
+          rename: {
+            suffix: '-lg',
+            extname: '.jpg'
+          }
+        }
+      ]
     }))
     .pipe(gulp.dest(paths.images_dist));
 });
