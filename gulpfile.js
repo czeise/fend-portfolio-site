@@ -29,7 +29,6 @@ gulp.task('prep-images', function(){
   gulp.src(paths.images_src)
     .pipe(plugins.responsive({
       '*.png': {
-        format: 'jpeg',
         width: 330,
         rename: {
           suffix: '-xs',
@@ -38,7 +37,6 @@ gulp.task('prep-images', function(){
       },
       'working.png': [
         {
-          format: 'jpeg',
           width: 720,
           height: 288,
           rename: {
@@ -46,7 +44,6 @@ gulp.task('prep-images', function(){
             extname: '.jpg'
           }
         }, {
-          format: 'jpeg',
           width: 940,
           height: 376,
           rename: {
@@ -54,13 +51,43 @@ gulp.task('prep-images', function(){
             extname: '.jpg'
           }
         }, {
-          format: 'jpeg',
           width: 1140,
           height: 456,
+          rename: { extname: '.jpg' }
+        }
+      ],
+      'survivr.png': {
+        width: 568,
+        rename: { extname: '.jpg' }
+      },
+      'udacitask-part2.png': {
+        width: 568,
+        rename: { extname: '.jpg' }
+      },
+      'animal-trading-cards.png': [
+        {
+          width: 220,
+          height: 174,
+          rename: {
+            suffix: '-sm',
+            extname: '.jpg'
+          }
+        }, {
+          width: 293,
+          height: 233,
+          rename: {
+            suffix: '-md',
+            extname: '.jpg'
+          }
+        }, {
+          width: 360,
+          height: 285.47,
           rename: {
             suffix: '-lg',
             extname: '.jpg'
           }
+        }, { // For the modal version of the taller image (except "-xs")
+          rename: { extname: '.jpg' }
         }
       ]
     }))
