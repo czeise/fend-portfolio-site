@@ -39,4 +39,8 @@ body {
   .header-text {
     text-align: center;
   }
+
+  .title-super {
+    font-size: 46px;
+  }
 }
