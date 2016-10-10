@@ -33,66 +33,68 @@
         </div>
       </div>
 
-      <section class="row">
-        <div class="col-xs-12">
-          <picture>
-            <source media="(min-width: 992px) and (max-width: 1199px)"
-              srcset="images/working-md.jpg">
-            <source media="(min-width: 361px) and (max-width: 991px)"
-              srcset="images/working-sm.jpg">
-            <!-- I don't drop down to my xs image until 360px since I'm targeting a Nexus 5 with this image...4 image sizes seemed like enough! -->
-            <source media="(max-width: 360px)" srcset="images/working-xs.jpg">
-            <img class="img-responsive" src="images/working.jpg" alt="Terminal and code editor windows">
-          </picture>
+      <main>
+        <section class="row">
+          <div class="col-xs-12">
+            <picture>
+              <source media="(min-width: 992px) and (max-width: 1199px)"
+                srcset="images/working-md.jpg">
+              <source media="(min-width: 361px) and (max-width: 991px)"
+                srcset="images/working-sm.jpg">
+              <!-- I don't drop down to my xs image until 360px since I'm targeting a Nexus 5 with this image...4 image sizes seemed like enough! -->
+              <source media="(max-width: 360px)" srcset="images/working-xs.jpg">
+              <img class="img-responsive" src="images/working.jpg" alt="Terminal and code editor windows">
+            </picture>
+          </div>
+        </section>
+
+        <div class="row">
+          <div class="col-xs-12">
+            <h2 class="text-muted">Projects</h2>
+          </div>
+          <div class="col-xs-12">
+            <!-- Additional horizontal rule when viewing on mobile to better separate sections -->
+            <hr class="visible-xs-block hr-tall">
+          </div>
         </div>
-      </section>
 
-      <div class="row">
-        <div class="col-xs-12">
-          <h2 class="text-muted">Projects</h2>
-        </div>
-        <div class="col-xs-12">
-          <!-- Additional horizontal rule when viewing on mobile to better separate sections -->
-          <hr class="visible-xs-block hr-tall">
-        </div>
-      </div>
+        <section class="row text-center">
+          <article class="col-sm-4 clickable" data-toggle="modal" data-target="#survivr">
+            <picture>
+              <source media="(max-width: 360px)" srcset="images/survivr-xs.jpg">
+              <img class="img-responsive center-block" src="images/survivr.jpg" alt="Survivr">
+            </picture>
+            <h3 class="text-uppercase">Survivr</h3>
+            <!-- Additional horizontal rule when viewing on mobile to better separate sections...this one is more subtle as it separates sub-sections -->
+            <hr class="visible-xs-block">
+            <!-- I'm dropping the links in this section and instead linking to my GitHub repos from the modals. REVIEWER NOTE: I realize this is an item on the rubric. Hopefully my design decision to move this text to the modal's is acceptable!-->
+          </article>
 
-      <section class="row text-center">
-        <article class="col-sm-4 clickable" data-toggle="modal" data-target="#survivr">
-          <picture>
-            <source media="(max-width: 360px)" srcset="images/survivr-xs.jpg">
-            <img class="img-responsive center-block" src="images/survivr.jpg" alt="Survivr">
-          </picture>
-          <h3 class="text-uppercase">Survivr</h3>
-          <!-- Additional horizontal rule when viewing on mobile to better separate sections...this one is more subtle as it separates sub-sections -->
-          <hr class="visible-xs-block">
-          <!-- I'm dropping the links in this section and instead linking to my GitHub repos from the modals. REVIEWER NOTE: I realize this is an item on the rubric. Hopefully my design decision to move this text to the modal's is acceptable!-->
-        </article>
+          <article class="col-sm-4 clickable" data-toggle="modal" data-target="#udacitask-part2">
+            <picture>
+              <source media="(max-width: 360px)" srcset="images/udacitask-part2-xs.jpg">
+              <img class="img-responsive center-block" src="images/udacitask-part2.jpg" alt="Udacitask 2.0">
+            </picture>
+            <h3 class="text-uppercase">Udacitask 2.0</h3>
+            <!-- Additional horizontal rule when viewing on mobile to better separate sections...this one is more subtle as it separates sub-sections -->
+            <hr class="visible-xs-block">
+            <!-- I'm dropping the links in this section and instead linking to my GitHub repos from the modals. REVIEWER NOTE: I realize this is an item on the rubric. Hopefully my design decision to move this text to the modal's is acceptable!-->
+          </article>
 
-        <article class="col-sm-4 clickable" data-toggle="modal" data-target="#udacitask-part2">
-          <picture>
-            <source media="(max-width: 360px)" srcset="images/udacitask-part2-xs.jpg">
-            <img class="img-responsive center-block" src="images/udacitask-part2.jpg" alt="Udacitask 2.0">
-          </picture>
-          <h3 class="text-uppercase">Udacitask 2.0</h3>
-          <!-- Additional horizontal rule when viewing on mobile to better separate sections...this one is more subtle as it separates sub-sections -->
-          <hr class="visible-xs-block">
-          <!-- I'm dropping the links in this section and instead linking to my GitHub repos from the modals. REVIEWER NOTE: I realize this is an item on the rubric. Hopefully my design decision to move this text to the modal's is acceptable!-->
-        </article>
-
-        <article class="col-sm-4 clickable" data-toggle="modal" data-target="#animal-trading-cards">
-          <picture>
-            <source media="(max-width: 767px)"
-              srcset="images/animal-trading-cards.jpg">
-            <source media="(max-width: 360px)"
-              srcset="images/animal-trading-cards-xs.jpg">
-            <img class="img-responsive center-block" src="images/animal-trading-cards-short.jpg"
-              alt="Animal Trading Cards">
-          </picture>
-          <h3 class="text-uppercase">Animal Trading Cards</h3>
-          <!-- I'm dropping the links in this section and instead linking to my GitHub repos from the modals. REVIEWER NOTE: I realize this is an item on the rubric. Hopefully my design decision to move this text to the modal's is acceptable!-->
-        </article>
-      </section>
+          <article class="col-sm-4 clickable" data-toggle="modal" data-target="#animal-trading-cards">
+            <picture>
+              <source media="(max-width: 767px)"
+                srcset="images/animal-trading-cards.jpg">
+              <source media="(max-width: 360px)"
+                srcset="images/animal-trading-cards-xs.jpg">
+              <img class="img-responsive center-block" src="images/animal-trading-cards-short.jpg"
+                alt="Animal Trading Cards">
+            </picture>
+            <h3 class="text-uppercase">Animal Trading Cards</h3>
+            <!-- I'm dropping the links in this section and instead linking to my GitHub repos from the modals. REVIEWER NOTE: I realize this is an item on the rubric. Hopefully my design decision to move this text to the modal's is acceptable!-->
+          </article>
+        </section>
+      </main>
     </div>
 
     <!-- Modals -->

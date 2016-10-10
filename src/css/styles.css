@@ -1,19 +1,19 @@
 body {
-    font-family: 'Lato', sans-serif;
-    color: #2d3c49;
-    font-weight: 300;
+  font-family: "Lato", sans-serif;
+  color: #2d3c49;
+  font-weight: 300;
 }
 
 .text-muted {
-    color: #7d97ad;
+  color: #7d97ad;
 }
 
 .text-thin {
-    font-weight: 100;
+  font-weight: 100;
 }
 
 .title-super {
-    font-size: 60px;
+  font-size: 60px;
 }
 
 .clickable {
