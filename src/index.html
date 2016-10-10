@@ -15,7 +15,7 @@
 
   <body>
     <div class="container">
-      <div class="row">
+      <header class="row">
         <div class="col-sm-3">
           <img class="logo" alt="Udacity" src="https://d125fmws0bore1.cloudfront.net/assets/svgs/logo-mark-e5f34635b01d52302632b23512f3553efba00cd453c3f891c8bf6ee0ca5bcb6c.svg">
         </div>
@@ -25,7 +25,7 @@
           <h4>Front-End Web Developer Nanodegree Student</h4>
           <h4>Ruby Programming Nanodegree Graduate</h4>
         </div>
-      </div>
+      </header>
 
       <div class="row">
         <div class="col-xs-12">
@@ -33,7 +33,7 @@
         </div>
       </div>
 
-      <div class="row">
+      <section class="row">
         <div class="col-xs-12">
           <picture>
             <source media="(min-width: 992px) and (max-width: 1199px)"
@@ -45,7 +45,7 @@
             <img class="img-responsive" src="images/working.jpg" alt="Terminal and code editor windows">
           </picture>
         </div>
-      </div>
+      </section>
 
       <div class="row">
         <div class="col-xs-12">
@@ -57,8 +57,8 @@
         </div>
       </div>
 
-      <div class="row text-center">
-        <div class="col-sm-4 clickable" data-toggle="modal" data-target="#survivr">
+      <section class="row text-center">
+        <article class="col-sm-4 clickable" data-toggle="modal" data-target="#survivr">
           <picture>
             <source media="(max-width: 360px)" srcset="images/survivr-xs.jpg">
             <img class="img-responsive center-block" src="images/survivr.jpg" alt="Survivr">
@@ -67,9 +67,9 @@
           <!-- Additional horizontal rule when viewing on mobile to better separate sections...this one is more subtle as it separates sub-sections -->
           <hr class="visible-xs-block">
           <!-- I'm dropping the links in this section and instead linking to my GitHub repos from the modals. -->
-        </div>
+        </article>
 
-        <div class="col-sm-4 clickable" data-toggle="modal" data-target="#udacitask-part2">
+        <article class="col-sm-4 clickable" data-toggle="modal" data-target="#udacitask-part2">
           <picture>
             <source media="(max-width: 360px)" srcset="images/udacitask-part2-xs.jpg">
             <img class="img-responsive center-block" src="images/udacitask-part2.jpg" alt="Udacitask 2.0">
@@ -77,9 +77,9 @@
           <h3 class="text-uppercase">Udacitask 2.0</h3>
           <!-- Additional horizontal rule when viewing on mobile to better separate sections...this one is more subtle as it separates sub-sections -->
           <hr class="visible-xs-block">
-        </div>
+        </article>
 
-        <div class="col-sm-4 clickable" data-toggle="modal" data-target="#animal-trading-cards">
+        <article class="col-sm-4 clickable" data-toggle="modal" data-target="#animal-trading-cards">
           <picture>
             <source media="(max-width: 767px)"
               srcset="images/animal-trading-cards.jpg">
@@ -89,18 +89,18 @@
               alt="Animal Trading Cards">
           </picture>
           <h3 class="text-uppercase">Animal Trading Cards</h3>
-        </div>
-      </div>
+        </article>
+      </section>
     </div>
 
     <!-- Modals -->
     <div class="modal fade" id="survivr" tabindex="-1" role="dialog" aria-labelledby="survivrLabel" aria-hidden="true">
         <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
+            <article class="modal-content">
+                <header class="modal-header">
                     <h4 class="modal-title" id="survivrLabel">Survivr</h4>
-                </div>
-                <div class="modal-body">
+                </header>
+                <section class="modal-body">
                   <figure>
                     <picture>
                       <source media="(max-width: 360px)" srcset="images/survivr-xs.jpg">
@@ -112,24 +112,24 @@
                         </a>
                       </figcaption>
                   </figure>
-                  <p>
+                  <section>
                     Info about Survivr...
-                  </p>
-                </div>
-                <div class="modal-footer">
+                  </section>
+                </section>
+                <footer class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-            </div>
+                </footer>
+            </article>
         </div>
     </div>
 
     <div class="modal fade" id="udacitask-part2" tabindex="-1" role="dialog" aria-labelledby="udacitaskLabel" aria-hidden="true">
         <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
+            <article class="modal-content">
+                <header class="modal-header">
                     <h4 class="modal-title" id="udacitaskLabel">Udacitask 2.0</h4>
-                </div>
-                <div class="modal-body">
+                </header>
+                <section class="modal-body">
                   <figure>
                     <picture>
                       <source media="(max-width: 360px)" srcset="images/udacitask-part2-xs.jpg">
@@ -141,24 +141,24 @@
                       </a>
                     </figcaption>
                   </figure>
-                  <p>
+                  <section>
                     Info about Udacitask 2.0...
-                  </p>
-                </div>
-                <div class="modal-footer">
+                  </section>
+                </section>
+                <footer class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-            </div>
+                </footer>
+            </article>
         </div>
     </div>
 
     <div class="modal fade" id="animal-trading-cards" tabindex="-1" role="dialog" aria-labelledby="tradingCardsLabel" aria-hidden="true">
         <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
+            <article class="modal-content">
+                <header class="modal-header">
                     <h4 class="modal-title" id="tradingCardsLabel">Animal Trading Cards</h4>
-                </div>
-                <div class="modal-body">
+                </header>
+                <section class="modal-body">
                   <figure>
                     <picture>
                       <source media="(max-width: 360px)"
@@ -168,14 +168,14 @@
                     </picture>
                     <!-- No repo for Animal Trading Cards... -->
                   </figure>
-                  <p>
+                  <section>
                     Info about Animal Trading Cards...
-                  </p>
-                </div>
-                <div class="modal-footer">
+                  </section>
+                </section>
+                <footer class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-            </div>
+                </footer>
+            </article>
         </div>
     </div>
   </body>
