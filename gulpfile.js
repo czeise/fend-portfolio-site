@@ -66,6 +66,7 @@ gulp.task('prep-images', function(){
         {
           width: 360,
           height: 285.47,
+          crop: 'north',
           rename: {
             suffix: '-short',
             extname: '.jpg'
